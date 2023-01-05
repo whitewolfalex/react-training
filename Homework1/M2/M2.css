@@ -1,0 +1,237 @@
+body {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: linear-gradient(
+      to right,
+      rgb(175, 163, 218),
+      rgb(204, 134, 201)
+    ); */
+}
+
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(175, 163, 218),
+    rgb(204, 134, 201)
+  );
+}
+
+.nav-bar-container > div {
+  padding: 10px;
+  text-align: center;
+  color: #20201d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar-container-item {
+  font-size: 25px;
+}
+
+.nav-bar-container-center-item {
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-bar-container-menu {
+  letter-spacing: 5px;
+  font-size: x-large;
+  transform: rotate(90deg);
+}
+
+.nav-bar-container-search {
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.sub-nav-bar-container {
+  background-color: rgb(226, 226, 226);
+}
+
+.sub-nav-bar-container .timeline-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  border-top: 1px solid rgb(226, 220, 220);
+  font-size: smaller;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* .sub-nav-bar-container .timeline-elements div {
+  padding: 10px;
+} */
+
+.date-time-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-time-elements :first-child p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.timeline-element p {
+  color: grey;
+}
+
+.active-elem p {
+  color: black;
+  border-bottom: black 1px solid;
+}
+
+.date-time-elem {
+  display: flex;
+  justify-content: space-around;
+}
+
+.day-number-title {
+  font-size: 120px;
+}
+
+.day-name {
+  background-image: linear-gradient(
+    to right,
+    rgb(175, 163, 218),
+    rgb(204, 134, 201)
+  );
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.month-name {
+  color: rgb(180, 178, 178);
+}
+
+.appointments {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  justify-items: flex-end;
+  /* padding-left: 50px; */
+  margin-top: 20px;
+}
+
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border-bottom: grey 1px solid;
+  padding-left: 50px;
+}
+
+.appointment-container * {
+  margin: 0px;
+  padding-left: 30px;
+}
+
+.appointment-content * {
+  padding: 5px;
+}
+
+.session-type {
+  border-left: solid 2px rgb(175, 163, 218);
+  margin-bottom: 30px;
+}
+
+.lifestyle-type {
+  border-left: solid 2px rgb(218, 64, 184);
+  margin-bottom: 30px;
+}
+
+.appointment-daytime {
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.plus-btn {
+  border: 1px solid #000;
+  width: 60px;
+  height: 60px;
+  border-radius: 1000px;
+  position: absolute;
+  margin: 4px;
+  background-color: black;
+  top: 356px;
+  right: 20px;
+}
+
+.plus-btn:before,
+.plus-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: violet;
+}
+
+.plus-btn::before {
+  width: 2px;
+  margin: 35% auto;
+  height: 20px;
+}
+
+.plus-btn::after {
+  margin: auto 35%;
+  height: 2px;
+  width: 20px;
+}
+
+.appointment-picture-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3px;
+  padding-left: 0px;
+  justify-content: flex-start;
+}
+
+.appointment-picture-container img {
+  width: 45px;
+  height: 45px;
+  /* padding-left: 20px; */
+  border-radius: 100%;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: -10px;
+}
+
+.image-placeholder {
+  width: 45px;
+  height: 45px;
+  border-radius: 1000px;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: linear-gradient(
+    to right,
+    rgb(175, 163, 218),
+    rgb(204, 134, 201)
+  );
+  padding: 0px;
+}
+
+.image-placeholder:after {
+  content: "C";
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 13px;
+  font-weight: bold;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: lighter;
+}
