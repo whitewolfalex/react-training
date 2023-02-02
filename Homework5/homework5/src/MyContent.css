@@ -1,0 +1,41 @@
+.MyContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.SearchBar {
+  margin-top: 10px;
+  align-self: center;
+  border: solid 1px rgb(226, 153, 124);
+  width: 865px;
+  height: 30px;
+  /* text-align: center; */
+  color: black;
+  background-color: rgb(231, 200, 187);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.UpperContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.UpperContainer {
+
+}
+
+.BreakLine {
+  width: 40%;
+  height: 0px;
+  border: solid 2px;
+}

@@ -1,0 +1,41 @@
+.BeverageItems {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.BeverageContainer {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Image {
+  width: 150px;
+  height: 120px;
+  background-color: rgb(141, 118, 118);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px;
+  flex-direction: column-reverse;
+}
+
+.ImageTitle {
+  justify-content: center;
+  border: solid 1px;
+  width: 150px;
+}
+
+.SingleItemDisplay {
+  display: flex;
+  align-self: center;
+}
+
+.SpaceAroundItem {
+  margin: 20px;
+}
+
+#BeverageItemsContainer {
+  display: flex;
+}
