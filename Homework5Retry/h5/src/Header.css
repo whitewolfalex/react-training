@@ -1,0 +1,23 @@
+.HeaderTitle {
+  background-color: rgb(194, 177, 177);
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+}
+
+.CategoriesContainer {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 10px; */
+  font-size: 25px;
+  background-color: antiquewhite;
+}
+
+.CategoryItem {
+    padding: 25px;
+    cursor: pointer;
+}
+
+.CategoryItem:hover{
+    background-color: rgb(209, 187, 159);
+}

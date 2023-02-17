@@ -1,0 +1,49 @@
+.DrinkContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 10px;
+    height: 10px; */
+}
+
+.DrinkTitle{
+    border: solid 1px;
+    background-color: aliceblue;
+}
+
+.DrinkImage{
+    width: 190px;
+    height: 190px;
+    display: flex;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.DrinkItem{
+    margin: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.BackBtn{
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: rgb(173, 142, 101);
+    font-size: 24px;
+}
+
+.BackBtn:hover{
+    background-color: rgb(230, 218, 200);
+}
+
+.PreviewDrink{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 3;
+}
