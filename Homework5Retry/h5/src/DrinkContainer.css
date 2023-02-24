@@ -1,49 +1,62 @@
-.DrinkContainer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    /* width: 10px;
-    height: 10px; */
+.DrinkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(189, 182, 173);
 }
 
-.DrinkTitle{
-    border: solid 1px;
-    background-color: aliceblue;
+.DrinkTitle {
+  border: solid 1px;
+  background-color: aliceblue;
+  /* padding: 10px; */
+  /* padding-left: 33px;
+  padding-right: 33px; */
+  width: 100%;
+  align-self: center;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 
-.DrinkImage{
-    width: 190px;
-    height: 190px;
-    display: flex;
-    cursor: pointer;
-    align-self: flex-end;
+.DrinkImage {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  cursor: pointer;
+  align-self: flex-end;
+  /* padding: 20px; */
+  /* height: 50%; */
+  align-self: center;
 }
 
-.DrinkItem{
-    margin: 50px;
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
+.DrinkItem {
+  margin: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
 }
 
-.BackBtn{
-    padding: 20px;
-    height: 100px;
-    width: 100px;
-    border: none;
-    background-color: rgb(173, 142, 101);
-    font-size: 24px;
+.BackBtn {
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  border: none;
+  background-color: rgb(173, 142, 101);
+  font-size: 24px;
 }
 
-.BackBtn:hover{
-    background-color: rgb(230, 218, 200);
+.BackBtn:hover {
+  background-color: rgb(230, 218, 200);
 }
 
-.PreviewDrink{
+.PreviewDrink {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    flex-grow: 3;
+    /* flex-grow: 3; */
+    align-content: stretch;
+    align-items: center;
+    column-gap: 18%;
 }

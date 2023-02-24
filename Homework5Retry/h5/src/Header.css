@@ -7,17 +7,81 @@
 
 .CategoriesContainer {
   display: flex;
-  justify-content: space-around;
   /* padding: 10px; */
-  font-size: 25px;
+  font-size: 16px;
   background-color: antiquewhite;
+  /* align-items: stretch; */
+  justify-content: space-evenly;
+  /* column-gap: 40px; */
+  background-color: rgb(66, 66, 64);
+  color: white;
 }
 
 .CategoryItem {
-    padding: 25px;
-    cursor: pointer;
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+  /* display: flex; */
+  text-align: center;
+  /* width: 200px; */
 }
 
-.CategoryItem:hover{
-    background-color: rgb(209, 187, 159);
+.CategoryItem:hover {
+  background-color: black;
+}
+
+.Sticky {
+  position: sticky;
+  top: 0;
+  /* align-self: center;
+  align-items: center; */
+}
+
+.SearchBar {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  /* padding: 10px; */
+}
+
+.SearchBarInput {
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  background-color: inherit;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* width: 130%; */
+  text-align: center;
+  background-color: rgb(201, 190, 190);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.CloseBtn {
+  position: absolute;
+  /* right: 100px; */
+  /* margin-right: 20px; */
+  padding: 8px;
+  padding-left: 20px;
+  min-width: 40px;
+  font-size: 20px;
+}
+
+.Icon {
+  padding: 10px;
+  min-width: 40px;
+  font-size: 23px;
+}
+
+.CloseBtn:hover {
+  background-color: rgb(145, 135, 123);
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
 }

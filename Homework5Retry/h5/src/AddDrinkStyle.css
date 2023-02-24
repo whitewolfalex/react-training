@@ -1,0 +1,41 @@
+.Popup{
+    padding: 20px;
+    background-color: rgb(159, 197, 197);
+    position: fixed;
+    border-radius: 20px;
+    right: 20px;
+    bottom: 30px;
+}
+
+.Popup:hover{
+    background-color: rgb(110, 226, 226);
+    cursor: pointer;
+}
+
+.CreateContainer{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+}
+
+.LeftContainer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(175, 162, 162);
+    padding: 90px;
+}
+
+.RightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 230px;
+    text-align: center;
+    align-items: center;
+}
+
+.RightContainer input{
+    text-align: center;
+}
