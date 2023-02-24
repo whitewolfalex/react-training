@@ -11,7 +11,6 @@ const CategoriesNav = ({ selectCategory, triggerFetchByCategory }) => {
         }
 
         return () => {
-            ////console.log("Categories are fetched");
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
@@ -24,7 +23,6 @@ const CategoriesNav = ({ selectCategory, triggerFetchByCategory }) => {
         if (categories.length === 0) {
             axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list')
                 .then((res) => {
-                    ////console.log(res.data);
                     const categories = res.data.drinks;
                     setCategories(categories);
                     triggerFetchByCategory(categories);

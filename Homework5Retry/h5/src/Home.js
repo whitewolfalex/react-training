@@ -12,25 +12,20 @@ const Home = () => {
     const headerRef = useRef();
 
     function selectCategory(category, categories) {
-        console.log("CHECK CATEGORY: ", category);
-        //console.log("HERE GOES selectCategory()");
         setCategory(category);
         setCategories(categories);
         childRef.current.changeCategory(category);
     }
 
     function previewDrink(drinkItem) {
-        ////console.log("CHECK DRINK ITEM", drinkItem);
     }
 
     function findDrink(searchTerm) {
-        ////console.log("[Home]SEARCHING FOR TERM: ", searchTerm);
         childRef.current.findDrink(searchTerm);
     }
 
     function resetView(event) {
         if (event === undefined || event.target.value === '') {
-            ////console.log("ACCEPTEDDDDDDDDDDD")
             childRef.current.resetView(event);
         }
     }
@@ -38,27 +33,22 @@ const Home = () => {
 
     function openCreateDrinkView() {
         if (btnName.trim().toLowerCase() === 'home') {
-            // ////console.log("Button is ", btnName, btnName.trim().toLowerCase() === 'home');
             setBtnName("Create a drink");
             childRef.current.goHomeFromCreateDrinkModal();
             headerRef.current.openCreateDrinkView();
         } else {
-            // ////console.log("Button is ", btnName);
             setBtnName("Home");
             childRef.current.openCreateDrinkView();
             headerRef.current.openCreateDrinkView();
         }
-        // childRef.current.openCreateDrinkView();
     }
 
-    function triggerFetchByCategory(categories){
-        //console.log("[HOME] categories fetched", categories);
+    function triggerFetchByCategory(categories) {
         setCategories(categories);
     }
 
     useEffect(() => {
         if (categories.length > 0) {
-            //console.log("[HOME - useEffect]CHECK categories: ", categories);
             childRef.current.fetchTheDrinks(categories);
         }
         return () => {

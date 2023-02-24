@@ -42,12 +42,10 @@ const SearchBar = forwardRef((props, ref) => {
 
     function findDrink(event) {
         const inputValue = event.target.value;
-        ////console.log("FIND DRINKKKKKKKKKKKKK", inputValue)
 
         if (event.key === 'Enter') {
             const searchTermTrimed = inputValue.trim().toLowerCase();
 
-            ////console.log("Entered ENTER", searchTermTrimed)
             props.findDrink(searchTermTrimed);
         }
     }

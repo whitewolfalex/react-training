@@ -10,7 +10,6 @@ const AddDrinkViewModal = ({ createDrink }) => {
     function resetImage(event) {
         event.preventDefault();
         setSelectedImage(null);
-        //console.log(document.getElementById("myImage").value = "");
     }
 
     function preventAutoClose(event) {
@@ -19,7 +18,6 @@ const AddDrinkViewModal = ({ createDrink }) => {
 
     function uploadImage(event) {
         event.preventDefault();
-        //console.log(event.target.files[0]);
         setSelectedImage(event.target.files[0]);
     }
 

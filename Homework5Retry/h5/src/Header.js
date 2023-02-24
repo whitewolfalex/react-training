@@ -21,7 +21,6 @@ const Header = forwardRef((props, ref) => {
 
     useImperativeHandle(ref, () => ({
         openCreateDrinkView() {
-            //console.log("IS ENABLED: ", enabled);
             setEnabled(!enabled);
         }
     }));
